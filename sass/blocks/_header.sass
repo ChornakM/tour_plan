@@ -9,23 +9,23 @@
   &__search
     margin-right: auto
     margin-left: 108px
+  .logo__img
+    max-width: 177px
 .search
   display: flex
   position: relative
   overflow: hidden
   border-radius: 6px
   height: 40px
-
   &__input
     width: 350px
     height: 100%
     padding-left: 23px
     padding-right: 75px
-    background: #F5FAFE
+    background: $input-color
     border: none
     font-size: 12px
     line-height: 15px
-    color: $text-color
   &__button
     position: absolute
     top: 0
@@ -36,7 +36,6 @@
     background-color: $primary
   &__search
     margin-top: 6px
-
 .user
   display: flex
   align-items: center
@@ -47,7 +46,7 @@
     border-radius: 50%
     object-fit: cover
   &__name
-    color: $text-color
     margin-left: 18px
     font-size: 14px
     line-height: 18px
+    color: $text-color

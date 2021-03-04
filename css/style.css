@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Muli', sans-serif;
+  color: #333333;
 }
 
 .container {
@@ -378,6 +379,10 @@ template {
   margin-left: 108px;
 }
 
+.header .logo__img {
+  max-width: 177px;
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,7 +402,6 @@ template {
   border: none;
   font-size: 12px;
   line-height: 15px;
-  color: Gray;
 }
 
 .search__button {
@@ -433,9 +437,9 @@ template {
 }
 
 .user__name {
-  color: Gray;
   margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
+  color: #333333;
 }
 /*# sourceMappingURL=style.css.map */
