@@ -1,10 +1,10 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   color: #333333;
 }
 
@@ -64,7 +64,7 @@ h1 {
  */
 hr {
   -webkit-box-sizing: content-box;
-  box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -102,7 +102,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -250,7 +250,7 @@ fieldset {
  */
 legend {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -285,7 +285,7 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -369,13 +369,17 @@ template {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.navbar-top__menu-button {
+  display: none;
 }
 
 .navbar__search {
@@ -383,12 +387,8 @@ template {
   margin-left: 108px;
 }
 
-.navbar__menu-button {
-  display: none;
-}
-
 .navbar-bottom {
-  background-color: #0a223d;
+  background-color: #0A223D;
 }
 
 .navbar-menu {
@@ -399,11 +399,11 @@ template {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #ffff;
 }
 
@@ -415,7 +415,7 @@ template {
   text-transform: uppercase;
 }
 
-.logo {
+.navbar .logo {
   width: 177px;
 }
 
@@ -434,7 +434,7 @@ template {
   height: 100%;
   padding-left: 23px;
   padding-right: 75px;
-  background: #f5fafe;
+  background: #F5FAFE;
   border: none;
   font-size: 12px;
   line-height: 15px;
@@ -447,7 +447,7 @@ template {
   width: 65px;
   height: 100%;
   border: none;
-  background-color: #ec1f46;
+  background-color: #EC1F46;
 }
 
 .search__search {
@@ -459,8 +459,8 @@ template {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
 }
 
@@ -469,7 +469,7 @@ template {
   height: 40px;
   border-radius: 50%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .user__name {
@@ -489,6 +489,9 @@ template {
   .container {
     max-width: 760px;
   }
+  .logo {
+    width: 132px;
+  }
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -496,7 +499,6 @@ template {
   .navbar__search {
     margin-left: auto;
     margin-right: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -506,8 +508,8 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
-  .logo {
-    width: 132px;
+  .search__input {
+    width: 340px;
   }
 }
 
@@ -516,9 +518,10 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search,
-  .navbar-menu,
-  .navbar__user {
+  .container .logo {
+    width: 99px;
+  }
+  .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
   .menu-button {
@@ -526,17 +529,18 @@ template {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 16px;
     height: 11px;
+    padding: 0;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border: none;
     cursor: pointer;
   }
@@ -544,12 +548,6 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
-  }
-}
-
-@media (max-width: 576px) {
-  .logo {
-    width: 99px;
   }
 }
 /*# sourceMappingURL=style.css.map */
