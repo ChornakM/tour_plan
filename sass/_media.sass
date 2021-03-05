@@ -26,8 +26,6 @@
   .container
     max-width: 576px
     width: 92%
-    .logo
-      width: 99px
   .navbar
     &__search, &-menu, &__user
       display: none
@@ -42,7 +40,12 @@
       flex-direction: column
       border: none
       cursor: pointer
+      outline: none
       &__line
         width: 16px
         height: 1px
         background-color: $text-color
+        max-width:
+@media ( max-width: 560px)
+  .logo
+    width: 99px

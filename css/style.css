@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   color: #333333;
 }
 
@@ -518,9 +518,6 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .container .logo {
-    width: 99px;
-  }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
@@ -543,11 +540,18 @@ template {
             flex-direction: column;
     border: none;
     cursor: pointer;
+    outline: none;
   }
   .menu-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+}
+
+@media (max-width: 560px) {
+  .logo {
+    width: 99px;
   }
 }
 /*# sourceMappingURL=style.css.map */
