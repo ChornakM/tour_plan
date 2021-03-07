@@ -508,7 +508,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 18px;
   padding-bottom: 70px;
 }
 
@@ -526,7 +526,6 @@ template {
 
 .hotel-info__name {
   margin: 0;
-  margin-top: 4px;
 }
 
 .hotel-info__description {
@@ -559,6 +558,10 @@ template {
       flex-basis: 100%;
 }
 
+.stars__star {
+  padding-right: 2px;
+}
+
 .offer {
   width: 70px;
   height: 20px;
@@ -569,7 +572,7 @@ template {
   color: #ffffff;
   border-radius: 3px;
   margin-left: 14px;
-  margin-top: 4px;
+  margin-top: 0px;
 }
 
 .ratting {
@@ -587,12 +590,15 @@ template {
 }
 
 .ratting__counter {
+  font-weight: bold;
   font-size: 14px;
   line-height: 18px;
 }
 
 .ratting__five {
-  font-size: 11px;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 13px;
 }
 
 @media (max-width: 1200px) {
@@ -696,6 +702,19 @@ template {
 @media (max-width: 560px) {
   .logo {
     width: 99px;
+  }
+  .menu-button {
+    margin-top: 7px;
+    margin-right: 15px;
+  }
+  .hotel {
+    padding-top: 4px;
+  }
+  .hotel-info__description {
+    width: 280px;
+  }
+  .stars {
+    margin-right: 28px;
   }
 }
 /*# sourceMappingURL=style.css.map */

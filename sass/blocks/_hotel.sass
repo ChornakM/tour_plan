@@ -1,5 +1,5 @@
 .hotel
-  padding-top: 23px
+  padding-top: 18px
   padding-bottom: 70px
   &-info
     display: flex
@@ -7,7 +7,6 @@
     justify-content: space-between
     &__name
       margin: 0
-      margin-top: 4px
     &__description
       margin: 0
   &-name
@@ -22,6 +21,8 @@
     line-height: 15px
 .stars
   flex-basis: 100%
+  &__star
+    padding-right: 2px
 .offer
   width: 70px
   height: 20px
@@ -32,7 +33,7 @@
   color: $light
   border-radius: 3px
   margin-left: 14px
-  margin-top: 4px
+  margin-top: 0px
 .ratting
   max-width: 65px
   min-height: 45px
@@ -44,7 +45,10 @@
     font-size: 8px
     line-height: 10px
   &__counter
+    font-weight: bold
     font-size: 14px
     line-height: 18px
   &__five
-    font-size: 11px
+    font-weight: bold
+    font-size: 10px
+    line-height: 13px
