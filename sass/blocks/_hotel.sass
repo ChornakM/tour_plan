@@ -5,7 +5,7 @@
     display: flex
     align-items: center
     justify-content: space-between
-    padding-bottom: 22px
+    padding-bottom: 20px
     &__name
       margin: 0
     &__description
@@ -57,7 +57,7 @@
   width: 100%
   height: 450px
   position: relative
-  background-repeat: 8px
+  border-radius: 8px
   &::after
     content: ''
     position: absolute
@@ -73,7 +73,7 @@
   width: 728px
   &-button
     position: absolute
-    top: 219px
+    top: 50%
     transform: translateY(-50%)
     z-index: 100
     width: 10px
@@ -81,12 +81,12 @@
     border: none
     cursor: pointer
     background-repeat: no-repeat
-    background-position: centre
+    background-position: center
     background-size: 10px
     background-color: transparent
     &--next
-      right: 18px
+      right: 25px
       background-image: url(../img/slide/turn-right.svg)
     &--prev
-      left: 16px
+      left: 25px
       background-image: url(../img/slide/turn-left.svg)

@@ -522,7 +522,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 22px;
+  padding-bottom: 20px;
 }
 
 .hotel-info__name {
@@ -606,7 +606,7 @@ template {
   width: 100%;
   height: 450px;
   position: relative;
-  background-repeat: 8px;
+  border-radius: 8px;
 }
 
 .swiper-container::after {
@@ -629,7 +629,7 @@ template {
 
 .slider-button {
   position: absolute;
-  top: 219px;
+  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 100;
@@ -638,18 +638,18 @@ template {
   border: none;
   cursor: pointer;
   background-repeat: no-repeat;
-  background-position: centre;
+  background-position: center;
   background-size: 10px;
   background-color: transparent;
 }
 
 .slider-button--next {
-  right: 18px;
+  right: 25px;
   background-image: url(../img/slide/turn-right.svg);
 }
 
 .slider-button--prev {
-  left: 16px;
+  left: 25px;
   background-image: url(../img/slide/turn-left.svg);
 }
 
