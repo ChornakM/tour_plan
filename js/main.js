@@ -12,4 +12,10 @@ var mySwiper = new Swiper(".swiper-container", {
     enabled: true,
     onlyInViewport: false,
   },
+
+  autoplay: {
+    daley: 3000,
+    stopOnLastSlide: false,
+    diasableOnInteraction: false,
+  },
 });
