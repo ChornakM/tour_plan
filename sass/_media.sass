@@ -1,9 +1,11 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+    padding: 0 15px
 @media (max-width: 960px)
   .container
     max-width: 760px
+    padding: 0 15px
   .logo
     width: 132px
   .navbar
@@ -22,6 +24,10 @@
   .search
     &__input
       width: 340px
+  .slider
+    width: 700px
+  .swiper-container  
+    height: 400px
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -63,6 +69,10 @@
         margin: 0
   .stars
     flex-basis: auto
+  .slider
+    width: 500px
+  .swiper-container  
+    height: 300px
 @media ( max-width: 560px)
   .logo
     width: 99px
@@ -77,3 +87,14 @@
         width: 280px
   .stars
     margin-right: 28px
+  .slider
+    width: 320px
+    &-button
+      width: 4px
+      height: 7px
+      &--next
+        right: 10px
+      &--prev
+        left: 10px
+  .swiper-container  
+    height: 200px

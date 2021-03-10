@@ -636,6 +636,7 @@ template {
   width: 10px;
   height: 17.5px;
   border: none;
+  outline: none;
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
@@ -656,12 +657,14 @@ template {
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+    padding: 0 15px;
   }
 }
 
 @media (max-width: 960px) {
   .container {
     max-width: 760px;
+    padding: 0 15px;
   }
   .logo {
     width: 132px;
@@ -684,6 +687,12 @@ template {
   }
   .search__input {
     width: 340px;
+  }
+  .slider {
+    width: 700px;
+  }
+  .swiper-container {
+    height: 400px;
   }
 }
 
@@ -749,6 +758,12 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .slider {
+    width: 500px;
+  }
+  .swiper-container {
+    height: 300px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -767,6 +782,22 @@ template {
   }
   .stars {
     margin-right: 28px;
+  }
+  .slider {
+    width: 320px;
+  }
+  .slider-button {
+    width: 4px;
+    height: 7px;
+  }
+  .slider-button--next {
+    right: 10px;
+  }
+  .slider-button--prev {
+    left: 10px;
+  }
+  .swiper-container {
+    height: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
