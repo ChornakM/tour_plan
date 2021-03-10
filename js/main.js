@@ -14,7 +14,7 @@ var mySwiper = new Swiper(".swiper-container", {
   },
 
   autoplay: {
-    daley: 3000,
+    dalay: 3000,
     stopOnLastSlide: false,
     diasableOnInteraction: false,
   },
