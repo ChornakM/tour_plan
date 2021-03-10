@@ -680,10 +680,11 @@ template {
 .booking {
   background: #0A223D;
   color: #ffffff;
+  font-family: Nunito;
   border-radius: 8px;
   width: 350px;
   height: 210px;
-  padding: 29px 29px 26px 26px;
+  padding: 28px 29px 29px 26px;
 }
 
 .booking__info {
@@ -713,15 +714,14 @@ template {
 }
 
 .booking__pricetag {
-  font-weight: 800;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 30px;
 }
 
 .booking__per-room {
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 18px;
 }
 
 .booking__room {
@@ -758,8 +758,8 @@ template {
   margin-bottom: 17px;
 }
 
-.booking__hading {
-  font-weight: 600;
+.booking__heading {
+  font-style: normal;
   font-size: 18px;
   line-height: 25px;
 }
@@ -823,8 +823,7 @@ template {
 
 @media (max-width: 960px) {
   .container {
-    max-width: 760px;
-    padding: 0 15px;
+    max-width: 730px;
   }
   .logo {
     width: 132px;
@@ -834,14 +833,24 @@ template {
     padding-bottom: 30px;
   }
   .navbar__search {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 48px;
+    margin-right: 73px;
   }
   .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding: 20px 13px 22px 13px;
   }
   .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .search__input {
+    padding-left: 23px;
+  }
+  .search-menu {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .search-menu__link {
     font-size: 12px;
     line-height: 15px;
   }
@@ -865,6 +874,7 @@ template {
   }
   .booking {
     width: 340px;
+    padding: 29px 22px 26px 23px;
   }
   .map {
     width: 340px;
@@ -955,15 +965,22 @@ template {
 }
 
 @media (max-width: 560px) {
+  .container {
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+  }
   .logo {
     width: 99px;
   }
   .menu-button {
     margin-top: 7px;
-    margin-right: 15px;
   }
   .hotel {
     padding-top: 4px;
+  }
+  .hotel-info {
+    padding-bottom: 38px;
   }
   .hotel-info__description {
     width: 280px;
@@ -972,10 +989,10 @@ template {
     margin-bottom: 20px;
   }
   .stars {
-    margin-right: 28px;
+    margin-right: 16px;
   }
   .slider {
-    width: 250px;
+    height: 179px;
   }
   .slider-button {
     width: 4px;
@@ -986,6 +1003,9 @@ template {
   }
   .slider-button--prev {
     left: 10px;
+  }
+  .booking {
+    padding: 29px 25px 28px 22px;
   }
 }
 /*# sourceMappingURL=style.css.map */
