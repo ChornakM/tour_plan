@@ -1076,6 +1076,7 @@ template {
     width: 100%;
   }
   .newsletter {
+    height: 318px;
     padding-top: 64px;
     padding-bottom: 83px;
   }
@@ -1088,6 +1089,7 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-left: 20px;
   }
   .newsletter-titele {
     margin-bottom: 37px;
@@ -1136,6 +1138,9 @@ template {
   .hotel__slider {
     margin-bottom: 20px;
   }
+  .hotel-right {
+    min-height: 405px;
+  }
   .stars {
     margin-right: 15px;
   }
@@ -1151,6 +1156,9 @@ template {
   }
   .slider-button--prev {
     left: 10px;
+  }
+  .map {
+    max-height: 172px;
   }
   .booking {
     padding: 29px 22px 28px 22px;
