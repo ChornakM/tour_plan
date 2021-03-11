@@ -822,7 +822,6 @@ template {
 
 .newsletter {
   position: relative;
-  min-height: 260px;
   padding: 78px 0 67px 0;
   background-image: url(../img/bg_img.jpeg);
   background-position: center;
@@ -858,7 +857,7 @@ template {
 }
 
 .newsletter-titele {
-  max-width: 242px;
+  width: 242px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -916,11 +915,9 @@ template {
       -ms-flex-align: start;
           align-items: flex-start;
   position: absolute;
-  width: 65px;
-  min-height: 55px;
+  min-width: 65px;
   right: 0;
   top: 0;
-  height: 100%;
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
@@ -932,7 +929,7 @@ template {
 }
 
 .reviews {
-  padding-top: 40px;
+  padding-top: 45px;
   padding-bottom: 70px;
 }
 
@@ -943,6 +940,7 @@ template {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+  margin-top: 40px;
 }
 
 .reviews-slider__item {
@@ -988,7 +986,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 43%;
   -webkit-transform: translatey(-50%);
           transform: translatey(-50%);
   width: 30;
@@ -1005,12 +1003,12 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../img/eroow/eroow-prev-secondary.svg);
-  left: 0;
+  left: 25px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/eroow/eroow-next-secondary.svg);
-  right: 0;
+  right: 27px;
 }
 
 .reviews-slider__profile {
@@ -1117,6 +1115,7 @@ template {
   }
   .search__input {
     padding-left: 23px;
+    width: 340px;
   }
   .search-menu {
     padding-top: 25px;
@@ -1125,9 +1124,6 @@ template {
   .search-menu__link {
     font-size: 12px;
     line-height: 15px;
-  }
-  .search__input {
-    width: 340px;
   }
   .hotel {
     padding-bottom: 56px;
@@ -1158,11 +1154,17 @@ template {
   .slider {
     width: 100%;
   }
+  .newsletter {
+    padding-bottom: 75px;
+  }
   .newsletter-wrapper {
     width: 700px;
   }
   .newsletter-titele {
     margin-top: 13px;
+  }
+  .subscribe__input {
+    padding-left: 33px;
   }
   .reviews-title {
     font-size: 30px;
@@ -1372,14 +1374,14 @@ template {
   .reviews-title {
     width: 245px;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 23px;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 42px;
   }
   .reviews-slider__item {
     width: 281px;
-    padding: 0 29px 36px 33px;
+    padding: 0 29px 36px 26px;
   }
   .reviews-slider__text {
     width: 219px;
