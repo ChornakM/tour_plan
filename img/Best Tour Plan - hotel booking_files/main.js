@@ -14,7 +14,7 @@ var hotelSlider = new Swiper(".hotel-slider", {
   },
 
   autoplay: {
-    delay: 3000,
+    dalay: 3000,
     stopOnLastSlide: false,
     diasableOnInteraction: false,
   },
@@ -25,12 +25,18 @@ var reveiwsSlider = new Swiper(".reviews-slider", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".reviews-slider__button--next",
-    prevEl: ".reviews-slider__button--prev",
+    nextEl: ".hotel-slider__button--next",
+    prevEl: ".hotel-slider__button--prev",
   },
 
   keyboard: {
     enabled: true,
     onlyInViewport: false,
+  },
+
+  autoplay: {
+    dalay: 3000,
+    stopOnLastSlide: false,
+    diasableOnInteraction: false,
   },
 });

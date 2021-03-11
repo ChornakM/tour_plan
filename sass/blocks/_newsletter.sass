@@ -1,6 +1,6 @@
 .newsletter
   position: relative
-  height: 260px
+  min-height: 260px
   padding: 78px 0 67px 0
   background-image: url(../img/bg_img.jpeg)
   background-position: center
@@ -24,6 +24,8 @@
     max-width: 731px
     margin: auto
   &-titele
+    max-width: 242px
+    align-items: flex-start
     display: flex
     flex-direction: column
     color: $light
@@ -37,12 +39,14 @@
       line-height: 45px
       text-transform: uppercase
 .subscribe
+  align-items: flex-start
   position: relative
   width: 350px
   height: 55px
   border-radius: 4px
   overflow: hidden
   &__input
+    align-items: flex-start
     position: absolute
     width: 100%
     height: 100%
@@ -55,8 +59,10 @@
     color: #BDBDBD
     line-height: 18px
   &__button
+    align-items: flex-start
     position: absolute
     width: 65px
+    min-height: 55px
     right: 0
     top: 0
     height: 100%
@@ -66,3 +72,5 @@
     outline: none
     font-size: 12px
     line-height: 15px
+    padding: 20px 18px 20px 18px
+    z-index: 100

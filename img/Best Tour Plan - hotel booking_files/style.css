@@ -822,7 +822,7 @@ template {
 
 .newsletter {
   position: relative;
-  min-height: 260px;
+  height: 260px;
   padding: 78px 0 67px 0;
   background-image: url(../img/bg_img.jpeg);
   background-position: center;
@@ -858,10 +858,6 @@ template {
 }
 
 .newsletter-titele {
-  max-width: 242px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -884,9 +880,6 @@ template {
 }
 
 .subscribe {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   position: relative;
   width: 350px;
   height: 55px;
@@ -895,9 +888,6 @@ template {
 }
 
 .subscribe__input {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -912,12 +902,8 @@ template {
 }
 
 .subscribe__button {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   position: absolute;
   width: 65px;
-  min-height: 55px;
   right: 0;
   top: 0;
   height: 100%;
@@ -927,8 +913,6 @@ template {
   outline: none;
   font-size: 12px;
   line-height: 15px;
-  padding: 20px 18px 20px 18px;
-  z-index: 100;
 }
 
 .reviews {
@@ -996,21 +980,10 @@ template {
   background-repeat: no-repeat;
   background-size: 10px;
   outline: none;
-  background-position: center;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 120;
 }
 
 .reviews-slider__button--prev {
-  background-image: url(../img/eroow/eroow-prev-secondary.svg);
-  left: 0;
-}
-
-.reviews-slider__button--next {
-  background-image: url(../img/eroow/eroow-next-secondary.svg);
-  right: 0;
+  background-image: url(../img/prev.svg);
 }
 
 .reviews-slider__profile {
