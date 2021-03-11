@@ -3,7 +3,10 @@
     max-width: 960px
     padding: 0 15px
   .slider
-    width: 570px
+    width: 400px
+  .hotel
+    &-slider
+      width: 550px
   .swiper
     &-slide
       &__img
@@ -44,6 +47,7 @@
     &-grid
       flex-direction: column    
     &__slider
+      width: 700px
       margin-bottom: 30px
     &-right
       flex-direction: row
@@ -59,6 +63,24 @@
       width: 700px
     &-titele
       margin-top: 13px
+  .reviews
+    &-title
+      font-size: 30px
+      line-height: 38px
+      margin-top: 40px
+      margin-bottom: 50px
+    &-slider
+      &__item
+        width: 579px
+        padding: 0 60px 30px 64px
+      &__text
+        width: 455px
+      &__button
+        top: 47%
+        &--next
+          right: 10px
+        &--prev
+          left: 10px
 @media ( max-width: 768px )
   .container
     max-width: 94%
@@ -87,6 +109,8 @@
       flex-basis: 100%
     &-wrapper
       justify-content: space-between
+    &__slider
+      width: 100%
     &-info
       &__text
         width: 100%
@@ -130,7 +154,6 @@
 .subscribe
   &__input
     padding-left: 20px
-
 @media ( max-width: 560px)
   .container
     margin: 0
@@ -154,19 +177,21 @@
         width: 280px
     &__slider
       margin-bottom: 20px
+      height: 179px
+    &-slider
+      &__button
+        width: 4px
+        height: 7px
+        &--next
+          right: 10px
+        &--prev
+          left: 10px  
     &-right
       min-height: 405px
   .stars
     margin-right: 15px
   .slider
-    height: 179px
-    &-button
-      width: 4px
-      height: 7px
-      &--next
-        right: 10px
-      &--prev
-        left: 10px
+    height: 179px    
   .map
     max-height: 172px
   .booking
@@ -181,5 +206,24 @@
       margin-top: 6px
     &__call-center
       width: 232px
-      
+  .reviews
+    &-title
+      width: 245px
+      font-size: 18px
+      line-height: 22px
+      margin: 0 auto
+      margin-top: 40px
+      margin-bottom: 42px
+    &-slider
+      &__item
+        width: 281px
+        padding: 0 29px 36px 33px
+      &__text
+        width: 219px
+      &__button
+        top: 8.5%
+        &--next
+          right: 50px
+        &--prev
+          left: 46px      
   

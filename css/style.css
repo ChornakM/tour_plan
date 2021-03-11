@@ -1080,7 +1080,10 @@ template {
     padding: 0 15px;
   }
   .slider {
-    width: 570px;
+    width: 400px;
+  }
+  .hotel-slider {
+    width: 550px;
   }
   .swiper-slide__img {
     width: 100%;
@@ -1136,6 +1139,7 @@ template {
             flex-direction: column;
   }
   .hotel__slider {
+    width: 700px;
     margin-bottom: 30px;
   }
   .hotel-right {
@@ -1159,6 +1163,28 @@ template {
   }
   .newsletter-titele {
     margin-top: 13px;
+  }
+  .reviews-title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__item {
+    width: 579px;
+    padding: 0 60px 30px 64px;
+  }
+  .reviews-slider__text {
+    width: 455px;
+  }
+  .reviews-slider__button {
+    top: 47%;
+  }
+  .reviews-slider__button--next {
+    right: 10px;
+  }
+  .reviews-slider__button--prev {
+    left: 10px;
   }
 }
 
@@ -1203,6 +1229,9 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .hotel__slider {
+    width: 100%;
   }
   .hotel-info__text {
     width: 100%;
@@ -1301,6 +1330,17 @@ template {
   }
   .hotel__slider {
     margin-bottom: 20px;
+    height: 179px;
+  }
+  .hotel-slider__button {
+    width: 4px;
+    height: 7px;
+  }
+  .hotel-slider__button--next {
+    right: 10px;
+  }
+  .hotel-slider__button--prev {
+    left: 10px;
   }
   .hotel-right {
     min-height: 405px;
@@ -1310,16 +1350,6 @@ template {
   }
   .slider {
     height: 179px;
-  }
-  .slider-button {
-    width: 4px;
-    height: 7px;
-  }
-  .slider-button--next {
-    right: 10px;
-  }
-  .slider-button--prev {
-    left: 10px;
   }
   .map {
     max-height: 172px;
@@ -1338,6 +1368,30 @@ template {
   }
   .booking__call-center {
     width: 232px;
+  }
+  .reviews-title {
+    width: 245px;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 42px;
+  }
+  .reviews-slider__item {
+    width: 281px;
+    padding: 0 29px 36px 33px;
+  }
+  .reviews-slider__text {
+    width: 219px;
+  }
+  .reviews-slider__button {
+    top: 8.5%;
+  }
+  .reviews-slider__button--next {
+    right: 50px;
+  }
+  .reviews-slider__button--prev {
+    left: 46px;
   }
 }
 /*# sourceMappingURL=style.css.map */
