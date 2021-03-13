@@ -145,9 +145,9 @@
           <!-- hotel-info__right -->
         </div>
         <div class="hotel-grid">
-          <div class="swiper-container">
+          <div class="swiper-container hotel-slider hotel__slider">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper hotel-slider hotel__slider">
+            <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide hotel-slider__item">
                 <img
@@ -256,7 +256,7 @@
       </div>
       <!-- container -->
     </section>
-    <section class="newsletter">
+    <section class="parallax-window newsletter">
       <div class="newsletter-wrapper">
         <h2 class="newsletter-titele">
           subscribe to our
@@ -444,38 +444,64 @@
         <!-- /.activities__titel -->
         <div class="activities-wrapper">
           <div class="card activities__card">
-            <img src="img/activity/activity-1.jpg" alt="The curious corner of chamarel" class="card_image">
-            <h3 class="card__title">The curious corner of chamarel</h3>
+            <img
+              src="img/activity/activity-1.jpg"
+              alt="The curious corner of chamarel"
+              class="card_image"
+            />
+            <h3 class="card__title">The curious corner of&nbspchamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
-            <img src="img/activity/activity-2.jpg" alt="Gymkhana club golf course" class="card_image">
-            <h3 class="card__title">Gymkhana club golf course</h3>
+            <img
+              src="img/activity/activity-2.jpg"
+              alt="Gymkhana club golf course"
+              class="card_image"
+            />
+            <h3 class="card__title">
+              Gymkhana club br golf <br />
+              course
+            </h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
-            <img src="img/activity/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card_image">
-            <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
+            <img
+              src="img/activity/activity-3.jpg"
+              alt="Tamarind falls hiking trip - full day"
+              class="card_image"
+            />
+            <h3 class="card__title">
+              Tamarind falls hiking trip&nbsp-&nbspfull&nbspday
+            </h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
-            <img src="img/activity/activity-4.jpg" alt="The blue marine discovery            quest" class="card_image">
+            <img
+              src="img/activity/activity-4.jpg"
+              alt="The blue marine discovery quest"
+              class="card_image"
+            />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          </div>
         </div>
-        <!-- /.activities-wrapper -->
       </div>
+      <!-- /.activities-wrapper -->
+
       <!-- /.container -->
     </section>
     <!-- /.activities -->
 
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper-slider.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script>
+      $(".parallax-window").parallax({ imageSrc: "img/bg_img.jpeg" });
+    </script>
   </body>
 </html>

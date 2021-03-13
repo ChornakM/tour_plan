@@ -823,7 +823,6 @@ template {
 .newsletter {
   position: relative;
   padding: 78px 0 67px 0;
-  background-image: url(../img/bg_img.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -915,6 +914,7 @@ template {
       -ms-flex-align: start;
           align-items: flex-start;
   position: absolute;
+  max-width: 75px;
   min-width: 65px;
   right: 0;
   top: 0;
@@ -970,7 +970,7 @@ template {
   top: 13px;
   width: 70px;
   height: 47px;
-  background-image: url(../img/gout/quot-left.svg);
+  background-image: url(../img/guot/qout-left.svg);
   background-repeat: no-repeat;
 }
 
@@ -981,13 +981,13 @@ template {
   top: 118px;
   width: 70px;
   height: 47px;
-  background-image: url(../img/gout/quot-right.svg);
+  background-image: url(../img/guot/qout-right.svg);
   background-repeat: no-repeat;
 }
 
 .reviews-slider__button {
   position: absolute;
-  top: 43%;
+  top: 36%;
   -webkit-transform: translatey(-50%);
           transform: translatey(-50%);
   width: 30;
@@ -1108,9 +1108,9 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 24px 26px;
+  padding-left: 26px;
   width: 255px;
-  height: 255px;
+  min-height: 255px;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -1150,6 +1150,9 @@ template {
 }
 
 .card__button {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -1161,6 +1164,7 @@ template {
   border-radius: 4px;
   cursor: pointer;
   outline: none;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 1200px) {
@@ -1403,8 +1407,14 @@ template {
   .newsletter__subscribe {
     width: 280px;
   }
+  .reviews-slider__button {
+    top: 40%;
+  }
+  .reviews-slider__button--next {
+    right: 0px;
+  }
   .activities {
-    padding-top: 30px;
+    padding: 29px 0px 98px 0px;
   }
   .subscribe__input {
     padding-left: 20px;
