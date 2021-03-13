@@ -820,6 +820,10 @@ template {
   overflow: hidden;
 }
 
+.other-packages {
+  padding: 40px 0 70px 0;
+}
+
 .newsletter {
   position: relative;
   padding: 78px 0 67px 0;
