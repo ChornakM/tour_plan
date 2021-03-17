@@ -91,6 +91,7 @@
           left: 10px
   .activities
     padding-top: 31px
+    padding-bottom: 48px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -98,20 +99,24 @@
   .card
     width: 49%
   .footer
-    &-wrapper
+    padding-top: 61px
+    &-wrapper      
       grid-template-columns: repeat(7, 1fr)
-      grid-gap: 10px
-      grid-row-gap: 40px
+      grid-gap: 1px
+      grid-row-gap: 52px
     &__input
       flex-basis: 47%
     &__logo
-      width: 104px
+      margin-top: 10px
+      width: 98px
       grid-row: 1 / 2
       grid-column: span 2
     &__social
       &-network
+        margin-right: 
+        margin-top: 28px
         grid-row: 1 / 2
-        grid-column: span 6
+        grid-column: span 5
         align-self: center
     &__categories
       grid-row: 2 / 3 
@@ -121,14 +126,24 @@
       margin-left: 0
       grid-column: span 2
     &__aditional
+      margin-left: 0
       grid-column: span 3
     &__contact
       &-details
         grid-row: 3
-        grid-column: span 5
+        grid-column: span 6
       &-form
+        margin-bottom: 58px
+        margin-left: 0
         grid-row: 4
-        grid-column: span 5
+        grid-column: span 6
+    &__foorm
+      width: 539px
+    &__finish
+      &-text
+        grid-column: 1/3
+        justify-self: start
+        margin-top: 4px
 @media ( max-width: 768px )
   .container
     max-width: 94%
