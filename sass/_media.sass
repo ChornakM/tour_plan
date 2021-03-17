@@ -16,6 +16,9 @@
   .card
     width: 220px
     height: 220px
+  .footer
+    &__input
+      flex-basis: 100%      
 @media (max-width: 960px)
   .container, .newsletter-wrapper
     max-width: 730px
@@ -94,6 +97,38 @@
       margin-bottom: 20px
   .card
     width: 49%
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(7, 1fr)
+      grid-gap: 10px
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 47%
+    &__logo
+      width: 104px
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 6
+        align-self: center
+    &__categories
+      grid-row: 2 / 3 
+      grid-column: span 2
+      margin-left: 0
+    &__legal
+      margin-left: 0
+      grid-column: span 2
+    &__aditional
+      grid-column: span 3
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 5
+      &-form
+        grid-row: 4
+        grid-column: span 5
 @media ( max-width: 768px )
   .container
     max-width: 94%
@@ -171,10 +206,82 @@
         &--next
           right: 0px
   .activities
-    padding: 29px 0px 98px 0px
+    padding: 29px 0px 60px 0px
   .subscribe
     &__input
       padding-left: 20px
+  .footer
+    padding-top: 69px
+    &-wrapper
+      grid-template-columns: 95%
+      grid-row-gap: 30px
+    &__input
+      width: 100%
+    &__logo
+      margin-top: 0
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        padding: 7px 0 45px 0
+        position: relative
+        grid-row: 2
+        grid-column: 1
+        margin-left: 0
+      &-links 
+        position: absolute
+        top: 52px
+    &__aditional
+      grid-row: 4
+      grid-column: 1
+      margin-left: 0
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__legal
+      grid-row: 3
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__icon
+      &-wrapper
+        min-width: 30px
+        margin-left: 0
+    &__input
+      flex-basis: 100% 
+    &__message
+      margin-bottom: 45px  
+    &__foorm
+      position: relative
+    &__info
+      position: absolute
+      bottom: 65px
+    &__finish
+      min-width: 100%
+      padding-bottom: 15px
+      &-text
+        min-width: 100%
+        justify-content: start
+        &__link
+          line-height: 10px
+      &-img
+        left: 0
+        bottom: 0
+    &__item
+      &--mb-2
+        margin-bottom: 20px
+    &__contact-form
+      margin-bottom: 25px
+      margin-left: 0
+    &__titel
+      &--mb-4
+        margin-top: 28px
+        margin-bottom: 15px
 @media ( max-width: 560px)
   .container
     margin: 0
@@ -249,7 +356,7 @@
         &--prev
           left: 46px
   .activities
-    padding: 36px 0px 60px 0px
+    padding: 36px 0px 39px 0px
     &__titel
       font-size: 18px
       line-height: 23px   
