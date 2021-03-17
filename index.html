@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="" class="logo">
@@ -25,7 +25,10 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -40,7 +43,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile_hidden">
             <img
               src="img/img_headear/user_avatar.png"
               alt="Avatar: Nathan"
@@ -61,6 +64,38 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+              <a
+                href="#"
+                class="user navbar__user navbar__user--mobile_visible"
+              >
+                <img
+                  src="img/img_headear/user_avatar.png"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile_visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img
+                    src="img/img_headear/search.svg"
+                    alt="Icon: search"
+                    class="search__search"
+                  />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -256,209 +291,6 @@
       </div>
       <!-- container -->
     </section>
-
-    <section class="other">
-      <div class="container">
-        <h3 class="other__titel">Other Packages</h3>
-        <div class="other-wrapper">
-          <div class="other-blue">
-            <div class="other-blue__img">
-              <img
-                class="other-blue__img-image"
-                src="img/other/other_1.jpg"
-                alt="Hotel Blue Haven"
-              />
-              <span class="other-blue__img-flash">Flash Offer</span>
-            </div>
-            <!-- /.other-blue__img -->
-            <div class="other__describe">
-              <div class="stars">
-                <img class="stars__star" src="img/Star.svg" alt="star" /><img
-                  class="stars__star"
-                  src="img/Star.svg"
-                  alt="star"
-                /><img class="stars__star" src="img/Star.svg" alt="star" /><img
-                  class="stars__star"
-                  src="img/Star.svg"
-                  alt="star"
-                /><img class="stars__star" src="img/Star.svg" alt="star" />
-              </div>
-              <!-- /.stars -->
-              <div class="other__hotel-name">Hotel Blue Haven</div>
-              <!-- /.other-hotel-name -->
-              <div class="other-__text">
-                Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
-                enim laborum magna llit. Ipsum est fugiat velit ea llamco do
-                esse ut in veniam sun in onsequat. Aute quis duis epteur
-                excepteur ipsum occaecat eiusmod nsectetur enim laborum magna
-                mollit. Ipsum est fugiat velit ea ullamco do
-              </div>
-              <!-- /.other-text-->
-              <ul class="other__ul">
-                <li class="other__item">
-                  <img src="img/BH-informayion/map-pin.svg" alt="Icon: map" />
-                  1749 Wheeler Ridge Delaware
-                  <img src="img/user.svg" alt="Icon: Guests" />
-                  2 x Guests
-                  <img src="img/home.svg" alt="Icon: Room" />
-                  1 x Room
-                </li>
-              </ul>
-              <!-- /.other__ul -->
-              <div class="other-price">
-                <div class="other-price__dollar">
-                  <span class="other-price__dollar-small">$ 10,500</span>
-                  <span class="other-price__dollar-big">$ 8,500</span>
-                </div>
-                <button class="other-button">Book Now</button>
-              </div>
-            </div>
-            <!-- /.other__describe -->
-          </div>
-          <!-- /.other-blue -->
-          <div class="other-belle">
-            <div class="other__img">
-              <img
-                class="other__img-image"
-                src="img/other/other-2.jpg"
-                alt="LUX* Belle Mare"
-              />
-              <span class="other__img-flash">Flash Offer</span>
-            </div>
-            <!-- /.other-belle__img -->            
-              <div class="other__hotel-name">Hotel Blue Haven</div>
-              <!-- /.other-hotel-name -->
-              <ul class="other__ul">
-                <li class="other__item">
-                  <img src="img/BH-informayion/map-pin.svg" alt="Icon: map" />
-                  1749 Wheeler Ridge Delaware
-                  <img src="img/user.svg" alt="Icon: Guests" />
-                  2 x Guests
-                  <img src="img/home.svg" alt="Icon: Room" />
-                  1 x Room
-                </li>
-              </ul>
-              <!-- /.other__ul -->
-              <div class="other-price">
-                <div class="other-price__dollar">
-                  <span class="other-price__dollar-small">$ 8,500</span>
-                  <span class="other-price__dollar-big">$ 3,000</span>
-                </div>
-                <button class="other-button">Book Now</button>
-              </div>
-            </div>
-            <!-- /.other__describe -->
-          </div>
-          <!-- /.other-belle -->
-          <div class="other-white">
-            <div class="other__img">
-              <img
-                class="other__img-image"
-                src="img/other/other-3.jpg"
-                alt="LUX* Belle Mare"
-              />
-              <span class="other__img-flash">Flash Offer</span>
-            </div>
-            <!-- /.other-belle__img -->
-              <div class="other__hotel-name">White Palace</div>
-              <!-- /.other-hotel-name -->
-              <ul class="other__ul">
-                <li class="other__item">
-                  <img src="img/BH-informayion/map-pin.svg" alt="Icon: map" />
-                  1749 Wheeler Ridge Delaware
-                  <img src="img/user.svg" alt="Icon: Guests" />
-                  2 x Guests
-                  <img src="img/home.svg" alt="Icon: Room" />
-                  1 x Room
-                </li>
-              </ul>
-              <!-- /.other__ul -->
-              <div class="other-price">
-                <div class="other-price__dollar">
-                  <span class="other-price__dollar-small">$ 10,500</span>
-                  <span class="other-price__dollar-big">$ 9,000</span>
-                </div>
-                <button class="other-button">Book Now</button>
-              </div>
-            </div>
-            <!-- /.other__describe -->
-          <!-- /.other-white -->
-          <div class="other-luxury">
-            <div class="other__img">
-              <img
-                class="other__img-image"
-                src="img/other/other-3.jpg"
-                alt="LUX* Belle Mare"
-              />
-              <span class="other__img-flash">Flash Offer</span>
-            </div>
-            <!-- /.other-belle__img -->            
-              <div class="other__hotel-name">Luxury Palace</div>
-              <!-- /.other-hotel-name -->
-              <ul class="other__ul">
-                <li class="other__item">
-                  <img src="img/BH-informayion/map-pin.svg" alt="Icon: map" />
-                  1749 Wheeler Ridge Delaware
-                  <img src="img/user.svg" alt="Icon: Guests" />
-                  2 x Guests
-                  <img src="img/home.svg" alt="Icon: Room" />
-                  1 x Room
-                </li>
-              </ul>
-              <!-- /.other__ul -->
-              <div class="other-price">
-                <div class="other-price__dollar">
-                  <span class="other-price__dollar-small">$ 4,500</span>
-                  <span class="other-price__dollar-big">$ 2,500</span>
-                </div>
-                <button class="other-button">Book Now</button>
-              </div>
-            </div>
-            <!-- /.other__describe -->
-          
-          <!-- /.other-luxury -->
-          <div class="other-five">
-            <div class="other__img">
-              <img
-                class="other__img-image"
-                src="img/other/other-5.jpg"
-                alt="LUX* Belle Mare"
-              />
-              <span class="other__img-flash">Flash Offer</span>
-            </div>
-            <!-- /.other-belle__img -->            
-              <div class="other__hotel-name">Hotel Five Star</div>
-              <!-- /.other-hotel-name -->
-              <ul class="other__ul">
-                <li class="other__item">
-                  <img src="img/BH-informayion/map-pin.svg" alt="Icon: map" />
-                  1749 Wheeler Ridge Delaware
-                  <img src="img/user.svg" alt="Icon: Guests" />
-                  2 x Guests
-                  <img src="img/home.svg" alt="Icon: Room" />
-                  1 x Room
-                </li>
-              </ul>
-              <!-- /.other__ul -->
-              <div class="other-price">
-                <div class="other-price__dollar">
-                  <span class="other-price__dollar-small">$ 6,500</span>
-                  <span class="other-price__dollar-big">$ 3,500</span>
-                </div>
-                <button class="other-button">Book Now</button>
-              </div>
-            </div>
-            <!-- /.other__describe -->
-          </div>
-          <!-- /.other-luxury -->
-        </div>
-        <!-- /.other__wrapper-->
-      </div>
-      <!-- /.container -->
-      </div>
-    </section>
-    <!-- /.other -->
-
     <section class="parallax-window newsletter">
       <div class="newsletter-wrapper">
         <h2 class="newsletter-titele">
@@ -765,19 +597,13 @@
             <h3 class="footer__titel footer__titel--inline">Social Network</h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link"
-                ><img
-                  src="img/footer/facebook.svg"
-                  alt="Icon: Facebook"
+                ><img src="img/footer/facebook.svg" alt="Icon: Facebook"
               /></a>
               <a href="#" class="footer__link"
-                ><img
-                  src="img/footer/youtube.svg"
-                  alt="Icon: Instagram"
+                ><img src="img/footer/youtube.svg" alt="Icon: Instagram"
               /></a>
               <a href="#" class="footer__link"
-                ><img
-                  src="img/footer/instagram.svg"
-                  alt="Icon: Intagram"
+                ><img src="img/footer/instagram.svg" alt="Icon: Intagram"
               /></a>
             </div>
             <!-- /.footer__social-liks -->
@@ -806,33 +632,46 @@
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
-                <ul class="footer__ul">              
-                  <li class="footer__item footer__item--mb-2">      
-                    <div class="footer__icon-wrapper">       
-                    <img class="footer__icon" src="img/footer/map-marker.svg" alt="Icon: map" />
-                    </div>
-                    9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
-                    States  
-                  </li>
-                  <li class="footer__item footer__item--mb-5">     
-                    <div class="footer__icon-wrapper">
-                    <img class="footer__icon" src="img/footer/phone-call.svg" alt="Icon: phone-call" />
-                    </div>
-                    Tel (business hours) : 269 1500 <br />
-                    Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br />
-                    Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm<br />
-                  </li>
-                  <li class="footer__item footer__item--mb-6">     
-                    <div class="footer__icon-wrapper">
-                    <img class="footer__icon" src="img/footer/mail.svg" alt="Icon: mail" />
-                    </div>
-                    cherly.lawson@example.com
-                  </li>
-        </ul>
+            <ul class="footer__ul">
+              <li class="footer__item footer__item--mb-2">
+                <div class="footer__icon-wrapper">
+                  <img
+                    class="footer__icon"
+                    src="img/footer/map-marker.svg"
+                    alt="Icon: map"
+                  />
+                </div>
+                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                States
+              </li>
+              <li class="footer__item footer__item--mb-5">
+                <div class="footer__icon-wrapper">
+                  <img
+                    class="footer__icon"
+                    src="img/footer/phone-call.svg"
+                    alt="Icon: phone-call"
+                  />
+                </div>
+                Tel (business hours) : 269 1500 <br />
+                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
+                pm) <br />
+                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm<br />
+              </li>
+              <li class="footer__item footer__item--mb-6">
+                <div class="footer__icon-wrapper">
+                  <img
+                    class="footer__icon"
+                    src="img/footer/mail.svg"
+                    alt="Icon: mail"
+                  />
+                </div>
+                cherly.lawson@example.com
+              </li>
+            </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__titel footer__titel--mb-4  ">send us a message</h3>
+            <h3 class="footer__titel footer__titel--mb-4">send us a message</h3>
             <form action="#" class="footer__foorm">
               <input
                 type="text"
@@ -858,13 +697,23 @@
         </div>
         <div class="footer__finish">
           <span class="footer__finish-text">
-            <a class="footer__finish-text footer__finish-text__link" href="#">Disclaimer</a>
+            <a class="footer__finish-text footer__finish-text__link" href="#"
+              >Disclaimer</a
+            >
             &ensp;
-            <a class="footer__finish-text footer__finish-text__link" href="#">Conditions of use</a>
+            <a class="footer__finish-text footer__finish-text__link" href="#"
+              >Conditions of use</a
+            >
             &ensp;
-            <a class="footer__finish-text footer__finish-text__link" href="#">Cancellation policy</a>
+            <a class="footer__finish-text footer__finish-text__link" href="#"
+              >Cancellation policy</a
+            >
           </span>
-          <img class="footer__finish-img" src="img/footer/card.jpg" alt="Pay System">
+          <img
+            class="footer__finish-img"
+            src="img/footer/card.jpg"
+            alt="Pay System"
+          />
         </div>
         <!-- /.footer-wrapper -->
       </div>
