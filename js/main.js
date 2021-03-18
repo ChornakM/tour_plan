@@ -34,5 +34,5 @@ menuButton.addEventListener("click", function () {
   console.log(" клик покноп");
   document
     .querySelector(".navbar-bottom")
-    .classList.toggle(".navbar-bottom--visible");
+    .classList.toggle("navbar-bottom--visible");
 });
