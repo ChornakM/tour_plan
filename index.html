@@ -530,7 +530,7 @@
       <!-- /.container -->
     </section>
     <!-- /.activities -->
-    <footer class="footer">
+  <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <a href="" class="logo footer__logo">
@@ -670,22 +670,25 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__titel footer__titel--mb-4">send us a message</h3>
-            <form action="#" class="footer__foorm">
+            <form action="send.php" method="POST" class="footer__foorm">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                neme="neme"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                neme="phone"
               />
               <textarea
                 class="footer__message"
                 cols="30"
                 rows="10"
                 placeholder="Message"
+                neme="message"
               ></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
