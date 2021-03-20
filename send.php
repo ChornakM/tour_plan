@@ -14,7 +14,11 @@ $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое письмо</h2>
 <b>Имя:</b> $name<br>
+<<<<<<< HEAD
 <b>Телефон:</b> $phone<br><br>
+=======
+<b>Телефон:</b> $phone<br>
+>>>>>>> 0894e6b764f1502af4f6dfb7d94689090a7af93b
 <b>Сообщение:</b><br>$message
 ";
 // Настройки
@@ -23,7 +27,11 @@ try{
   $mail->isSMTP();
   $mail->CharSet ="UTF-8";
   $mail->SMTPAuth = true;
+<<<<<<< HEAD
   // $mail->SMTPDebug = 2;
+=======
+  $mail->SMTPDebug = 2;
+>>>>>>> 0894e6b764f1502af4f6dfb7d94689090a7af93b
   $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
   //настройки вашей почты
@@ -41,6 +49,7 @@ try{
   $mail->Subject = $title; // Заголовок письма
   $mail->Body = $body; // Текст письма
 
+<<<<<<< HEAD
   // Результат
 if ($mail->send()) {$result = "success";} 
 else {$result = "error";}
@@ -96,6 +105,8 @@ try{
   $mail->Subject = $title; // Заголовок письма
   $mail->Body = $body; // Текст письма
 
+=======
+>>>>>>> 0894e6b764f1502af4f6dfb7d94689090a7af93b
   // Результат
 if ($mail->send()) {$result = "success";} 
 else {$result = "error";}
@@ -106,5 +117,9 @@ else {$result = "error";}
 }
 
 // Отображение результата
+<<<<<<< HEAD
 header('Location: thankyou.html');
 ?>
+=======
+echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+>>>>>>> 0894e6b764f1502af4f6dfb7d94689090a7af93b
