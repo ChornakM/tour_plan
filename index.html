@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar navbar--mobile_fixed">
+    <header class="navbar navbar--mobile-fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="" class="logo">
@@ -27,7 +27,7 @@
 
           <form
             action="#"
-            class="search navbar__search navbar__search--mobile_hidden"
+            class="search navbar__search navbar__search--mobile-hidden"
           >
             <input
               type="text"
@@ -43,7 +43,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile_hidden">
+          <a href="#" class="user navbar__user navbar__user--mobile-hidden">
             <img
               src="img/img_headear/user_avatar.png"
               alt="Avatar: Nathan"
@@ -64,10 +64,10 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
-            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <li class="navbar-menu__item navbar-menu__item--mobile-visible">
               <a
                 href="#"
-                class="user navbar__user navbar__user--mobile_visible"
+                class="user navbar__user navbar__user--mobile-visible"
               >
                 <img
                   src="img/img_headear/user_avatar.png"
@@ -77,10 +77,10 @@
                 <span class="user__name user__name--light">Nathan</span>
               </a>
             </li>
-            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <li class="navbar-menu__item navbar-menu__item--mobile-visible">
               <form
                 action="#"
-                class="search navbar__search navbar__search--mobile_visible"
+                class="search navbar__search navbar__search--mobile-visible"
               >
                 <input
                   type="text"
@@ -298,11 +298,16 @@
           <span class="newsletter-titele__strong">newsletter</span>
         </h2>
         <!-- /.newsletter-tittel -->
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
           <button class="subscribe__button">Send</button>
         </form>
@@ -482,7 +487,7 @@
             <img
               src="img/activity/activity-1.jpg"
               alt="The curious corner of chamarel"
-              class="card_image"
+              class="card-image"
             />
             <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
             <button class="card__button">Book Now</button>
@@ -492,7 +497,7 @@
             <img
               src="img/activity/activity-2.jpg"
               alt="Gymkhana club golf course"
-              class="card_image"
+              class="card-image"
             />
             <h3 class="card__title">
               Gymkhana club golf <br />
@@ -505,7 +510,7 @@
             <img
               src="img/activity/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
-              class="card_image"
+              class="card-image"
             />
             <h3 class="card__title">
               Tamarind falls hiking trip&nbsp;-&nbsp;full&nbsp;day
@@ -517,7 +522,7 @@
             <img
               src="img/activity/activity-4.jpg"
               alt="The blue marine discovery quest"
-              class="card_image"
+              class="card-image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <button class="card__button">Book Now</button>
@@ -530,7 +535,7 @@
       <!-- /.container -->
     </section>
     <!-- /.activities -->
-  <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <a href="" class="logo footer__logo">
@@ -675,20 +680,20 @@
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
-                neme="neme"
+                name="name"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
-                neme="phone"
+                name="phone"
               />
               <textarea
                 class="footer__message"
                 cols="30"
                 rows="10"
                 placeholder="Message"
-                neme="message"
+                name="message"
               ></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -698,15 +703,15 @@
         </div>
         <div class="footer__finish">
           <span class="footer__finish-text">
-            <a class="footer__finish-text footer__finish-text__link" href="#"
+            <a class="footer__finish-text footer__finish-text--link" href="#"
               >Disclaimer</a
             >
             &ensp;
-            <a class="footer__finish-text footer__finish-text__link" href="#"
+            <a class="footer__finish-text footer__finish-text--link" href="#"
               >Conditions of use</a
             >
             &ensp;
-            <a class="footer__finish-text footer__finish-text__link" href="#"
+            <a class="footer__finish-text footer__finish-text--link" href="#"
               >Cancellation policy</a
             >
           </span>

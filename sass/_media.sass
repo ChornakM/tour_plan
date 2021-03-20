@@ -143,7 +143,7 @@
       &--mb-4
         margin-bottom: 34px
     &__foorm
-      width: 539px
+      width: 100%
     &__finish
       &-text
         grid-column: 1/3
@@ -155,9 +155,11 @@
     max-width: 94%
   body
     padding-top: 78px
+    &-lock
+      overflow: hidden
   .navbar
     &--mobile
-      &_fixed
+      &-fixed
         position: fixed
         left: 0
         top: 0
@@ -165,9 +167,9 @@
         z-index: 99
     &__user, &__search
       &--mobile
-        &_hidden
+        &-hidden
           display: none
-        &_visible
+        &-visible
           display: flex
     &__user
       flex-direction: column
@@ -179,7 +181,8 @@
       right: 0
       bottom: 0
       top: 78px
-      &--visible
+      overflow: auto
+      &-visible
         display: block
     &-menu
       padding-top: 31px
@@ -189,7 +192,7 @@
         font-size: 12px;
         line-height: 15px;
         &--mobile
-          &_visible
+          &-visible
             display: block
     &__search
       width: 56%
