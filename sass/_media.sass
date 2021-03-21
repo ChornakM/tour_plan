@@ -150,13 +150,22 @@
         justify-self: start
         margin-top: 4px
         margin-left: 1px
+  .modal
+    &__dialog
+      padding: 25px 44px
+      width: 45%
+    &__message
+      height: 75px
+    &__info
+      margin-bottom: 15px
+  .info
+    flex-direction: column-reverse
+    align-items: start    
 @media ( max-width: 768px )
   .container
     max-width: 94%
   body
     padding-top: 78px
-    &-lock
-      overflow: hidden
   .navbar
     &--mobile
       &-fixed
@@ -468,3 +477,14 @@
         grid-column: span 3
         grid-row: 2 / 3
         justify-self: start
+  .modal
+    &__dialog
+      padding: 25px 15px
+      width: 75%
+    &__message
+      height: 75px
+    &__info
+      margin-bottom: 15px
+  .info
+    flex-direction: column-reverse
+    align-items: start
