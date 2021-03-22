@@ -45,8 +45,8 @@ $(document).ready(function () {
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
     $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
-
-  
+    document.body.classList.toggle("lock");
+  }
 
   function closeModal(event) {
     event.preventDefault();
@@ -54,5 +54,6 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
+    document.body.classList.remove("lock");
   }
 });

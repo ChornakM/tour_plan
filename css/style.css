@@ -1452,6 +1452,10 @@ template {
   grid-column: 3 / 4;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1487,7 +1491,7 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .modal__dialog--visible {
@@ -1784,6 +1788,9 @@ template {
   }
   body {
     padding-top: 78px;
+  }
+  .lock {
+    overflow: hidden;
   }
   .navbar--mobile-fixed {
     position: fixed;
