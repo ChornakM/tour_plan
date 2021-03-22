@@ -952,7 +952,6 @@ template {
   padding-right: 75px;
   font-weight: 300;
   font-size: 14px;
-  color: #BDBDBD;
   line-height: 18px;
 }
 
@@ -1488,6 +1487,7 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow: auto;
 }
 
 .modal__dialog--visible {
@@ -1760,7 +1760,6 @@ template {
   }
   .modal__dialog {
     padding: 25px 44px;
-    width: 45%;
   }
   .modal__message {
     height: 75px;
@@ -2071,6 +2070,15 @@ template {
   }
   .footer__titel--mb-4 {
     margin-top: 28px;
+    margin-bottom: 15px;
+  }
+  .modal__dialog {
+    width: 70%;
+  }
+  .modal__message {
+    height: 75px;
+  }
+  .modal__info {
     margin-bottom: 15px;
   }
 }
