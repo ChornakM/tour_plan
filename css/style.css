@@ -1479,8 +1479,10 @@ template {
   position: fixed;
   top: 50%;
   left: 50%;
+  padding: 31px 88px 25px 88px;
   width: 478px;
-  padding: 33px 88px;
+  max-height: 487px;
+  height: 81%;
   color: #ffffff;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
@@ -1525,7 +1527,7 @@ template {
 .modal__message {
   width: 100%;
   height: 123px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .modal__info {
