@@ -18,7 +18,8 @@
     height: 220px
   .footer
     &__input
-      flex-basis: 100%      
+      &-group
+        flex-basis: 47%      
 @media (max-width: 960px)
   .container, .newsletter-wrapper
     max-width: 730px
@@ -105,7 +106,8 @@
       grid-gap: 1px
       grid-row-gap: 48px
     &__input
-      flex-basis: 47%
+      &-group
+        flex-basis: 47%
     &__logo
       margin-top: 10px
       width: 98px
@@ -475,6 +477,9 @@
     &__contact
       &-details
         margin-top: 24px
+    &__input
+      &-group
+        flex-basis: 100%
     &__finish
       &-text
         grid-column: span 3
