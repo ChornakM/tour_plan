@@ -28,7 +28,7 @@
 
           <form
             action="#"
-            class="search navbar__search navbar__search--mobile-hidden form"
+            class="search navbar__search navbar__search--mobile-hidden"
             data-aos="flip-down"
             data-aos-duration="1500"
           >
@@ -36,7 +36,6 @@
               type="search"
               class="search__input"
               placeholder="Search Location"
-              required
             />
             <button class="search__button">
               <img
@@ -814,10 +813,11 @@
               </div>
               <div class="footer__input-group">
                 <input
-                  type="text"
+                  type="tel"
                   class="input footer__input"
                   placeholder="Phone Number*"
                   name="phone"
+                  id="phone"
                   required
                 />
               </div>
@@ -882,10 +882,11 @@
               class="input modal__input"
               placeholder="Phone Number*"
               name="phone"
+              id="phonex"
               required
             />
             <input
-              type="text"
+              type="email"
               class="input modal__input"
               placeholder="Email*"
               name="email"

@@ -62,18 +62,20 @@ $(document).ready(function () {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Укажите имя",
-          minlength: "Имя должно быть не короче 2 букв",
+          required: "Please enter your name",
+          minlength: "Name must be at least 2 letters long",
         },
         email: {
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
-          required: "Телефон обезателен",
+          required: "The phone is deactivated",
         },
       },
     });
   });
+  $("#phone").mask("+7(999) 999-9999");
+  $("#phonex").mask("+7(999) 999-9999");
   AOS.init();
 });

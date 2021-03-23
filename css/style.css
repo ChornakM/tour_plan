@@ -953,14 +953,12 @@ template {
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  position: absolute;
   width: 100%;
   height: 100%;
   border: none;
@@ -970,6 +968,8 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .subscribe__button {
@@ -990,6 +990,8 @@ template {
   padding: 20px 18px 20px 18px;
   z-index: 90;
   cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  overflow: hidden;
 }
 
 .reviews {
