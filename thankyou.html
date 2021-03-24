@@ -18,7 +18,7 @@
     <header class="navbar navbar--mobile-fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo" data-aos="zoom-out">
+          <a href="index.html" class="logo">
             <img
               src="img/img_headear/horizontal_logo.svg"
               alt="logo: Best Tour Plan"
@@ -29,7 +29,6 @@
           <form
             action="#"
             class="search navbar__search navbar__search--mobile-hidden"
-            data-aos="zoom-out"
           >
             <input
               type="text"
@@ -45,11 +44,7 @@
             </button>
           </form>
 
-          <a
-            href="#"
-            class="user navbar__user navbar__user--mobile-hidden"
-            data-aos="zoom-out"
-          >
+          <a href="#" class="user navbar__user navbar__user--mobile-hidden">
             <img
               src="img/img_headear/user_avatar.png"
               alt="Avatar: Nathan"
@@ -172,17 +167,11 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a
-            href="index.html"
-            class="logo footer__logo"
-            data-aos="zoom-out-right"
-          >
+          <a href="index.html" class="logo footer__logo">
             <img src="img/footer/verticallogo.svg" alt="Logo: Best Tour Plan" />
           </a>
           <div class="footer__list footer__categories">
-            <h3 class="footer__titel" data-aos="zoom-out-right">
-              All Categories
-            </h3>
+            <h3 class="footer__titel">All Categories</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">All Deals</a>
@@ -211,9 +200,7 @@
             </ul>
           </div>
           <div class="footer__social footer__aditional">
-            <h3 class="footer__titel" data-aos="zoom-out-right">
-              ADDITIONAL INFORMATION
-            </h3>
+            <h3 class="footer__titel">ADDITIONAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">About Us</a>
@@ -239,12 +226,7 @@
           </div>
           <!-- /.footer-__list-->
           <div class="footer__social-network">
-            <h3
-              class="footer__titel footer__titel--inline"
-              data-aos="zoom-out-right"
-            >
-              Social Network
-            </h3>
+            <h3 class="footer__titel footer__titel--inline">Social Network</h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link"
                 ><img src="img/footer/facebook.svg" alt="Icon: Facebook"
@@ -260,9 +242,7 @@
           </div>
           <!-- /.footer__social-network -->
           <div class="footer__list footer__legal">
-            <h3 class="footer__titel" data-aos="zoom-out-right">
-              Legal Information
-            </h3>
+            <h3 class="footer__titel">Legal Information</h3>
             <ul class="footer__ul">
               <li class="footer__ul footer__item">
                 <a href="#" class="footer__link">Terms & Conditions</a>
@@ -280,12 +260,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-details">
-            <h3
-              class="footer__titel footer__titel--mb-3"
-              data-aos="zoom-out-right"
-            >
-              Contact Details
-            </h3>
+            <h3 class="footer__titel footer__titel--mb-3">Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
@@ -328,13 +303,8 @@
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3
-              class="footer__titel footer__titel--mb-4"
-              data-aos="zoom-out-right"
-            >
-              send us a message
-            </h3>
-            <form action="send.php" method="POST" class="footer__foorm">
+            <h3 class="footer__titel footer__titel--mb-4">send us a message</h3>
+            <form action="send.php" method="POST" class="footer__foorm form">
               <div class="footer__input-group">
                 <input
                   type="text"
@@ -350,6 +320,7 @@
                   class="input footer__input"
                   placeholder="Phone Number*"
                   name="phone"
+                  id="phone"
                   required
                 />
               </div>
@@ -398,6 +369,9 @@
     <script>
       $(".parallax-window").parallax({ imageSrc: "img/bg_img.jpeg" });
     </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
