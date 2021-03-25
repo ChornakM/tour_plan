@@ -38,6 +38,13 @@ $(document).ready(function () {
     $(".form").each(function () {
       $(this).validate({
         errorClass: "invalid",
+        rules: {
+          phone: {
+            required: "true",
+            minlength: 10,
+          },
+        },
+
         messages: {
           name: {
             required: "Please enter your name",
@@ -48,7 +55,9 @@ $(document).ready(function () {
             email:
               "Your email address must be in the format of name@domain.com",
           },
-          phone: { required: "The phone is deactivated" },
+          phone: {
+            required: "The phone is deactivated",
+          },
         },
       });
     }),
