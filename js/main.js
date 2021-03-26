@@ -40,7 +40,7 @@ $(document).ready(function () {
         errorClass: "invalid",
         rules: {
           phone: {
-            required: "true",
+            required: true,
             minlength: 16,
             maxlength: 16,
           },

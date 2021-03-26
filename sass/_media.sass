@@ -293,9 +293,11 @@
       top: 78px
       overflow: auto
       &-visible
+        position: relative
+        top: 10px
         display: block
     &-menu
-      padding-top: 21px
+      padding-top: 31px
       flex-direction: column
       &__item
         margin-bottom: 20px
@@ -337,6 +339,7 @@
   .navbar
     &-top
       padding-top: 19px
+      padding-bottom: 21px
     &__search
       &--mobile
         &_visible        
@@ -495,6 +498,8 @@
       height: 75px
     &__info
       margin-bottom: 15px
+  .invalid
+    font-size: 10px
 @media ( max-width: 560px)
   .container
     max-width: 97%    
