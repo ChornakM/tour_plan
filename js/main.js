@@ -41,7 +41,8 @@ $(document).ready(function () {
         rules: {
           phone: {
             required: "true",
-            minlength: 10,
+            minlength: 16,
+            maxlength: 16,
           },
         },
 
@@ -57,6 +58,9 @@ $(document).ready(function () {
           },
           phone: {
             required: "The phone is deactivated",
+            minlenght: jQuery.validator.format(
+              "At least 11 characters reguired"
+            ),
           },
         },
       });
