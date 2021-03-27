@@ -45,7 +45,6 @@ $(document).ready(function () {
             maxlength: 16,
           },
         },
-
         messages: {
           name: {
             required: "Please enter your name",
